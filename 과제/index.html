@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <style>
+     #cont {
+      position: relative;
+      left: 20px; top: 10px;
+      width: 95%;
+     }
+     #cont > #news {
+      width: 100%;
+     }
+     a > span:hover{
+      color: blue;
+     }
+     a:active{
+      color: black;
+      text-decoration: none;
+     }
+     new {
+       position:relative;
+       z-index: 100;
+     }
+     #ani {
+       position:relative;
+       width: 100%;
+       height: 350px;
+       z-index: 102;
+     }
+     #ani:hover{
+      animation-duration: 1s;
+      animation-name: news;
+      -webkit-animation-fill-mode:both
+     }
+     .dars {
+       width:35%;
+       height:60px;
+     }
+     #dar {
+       position: relative;
+       left : 60%; bottom:354px;
+       background-color: gray;
+       padding:0px 1px 0px 20px;
+       width: 37%;
+       height: 350px;
+       z-index: 101;
+     }
+     #dar:hover {
+       z-index: 103;
+     }
+     #dar:hover + #ani{
+       width:60%;
+     }
+     #box {
+       background-color: black;
+       color: white;
+       width:110px;
+       border-radius: 3px;
+     }
+     #won {
+        margin-top:32px;
+        color: white;
+        font-size: 150%;
+        float: right;
+     }
+     #cal > a {
+      color: black;
+      text-decoration: none;
+      position: relative;
+      bottom: 300px;
+     }
+     #sale {
+       position: relative;
+       bottom: 200px;
+     }
+     #sal {
+       position: relative;
+       bottom: 150px;
+     }
+     .sale {
+       width: 300px;
+       height: 100px;
+     }
+     .saleit {
+       display: inline-block;
+       width: 300px;
+       height: 150px;
+       background-color: gray;
+       border-radius: 5px;
+       font-size: 180%;
+       margin-bottom: 20px;
+     }
+     .bfprice {
+       color: red;
+       text-decoration: line-through;
+     }
+     .afprice {
+       color: skyblue;
+     }
+     @keyframes news {
+       form {
+         width:100%;
+       }
+       to {
+         width:60%;
+       }
+     }
+  </style>
+</head>
+<body>
+  <header>
+    <hr id="top">
+    <a href="index.html"><img src="images/logo.png" id="logo"></a>
+    <a href="category.html"><div id="game">게임</div></a>
+    <div id="console">게임기</div>
+    <a href="login.html"><div id="login">로그인</div></a>
+    <a href="signup.html"><div id="signup">회원 가입</div></a>
+  </header>
+  <nav>
+    <div id="cont">
+    	<h2> 게임 뉴스</h2>
+      <div id="new">
+      <img src="images/darksoull.png" id="ani">
+      <div id="dar">
+        <h2>darksouls : remaster</h2>
+        <h4>플레이 이미지</h4>
+        <div id="imag">
+          <img src="images/dar1.jpg" class="dars">
+          <img src="images/dar2.jpg" class="dars">
+          <br>
+          <img src="images/dar3.jpg" class="dars">
+          <img src="images/dar4.jpg" class="dars">
+        </div>
+        판매중
+        <div id="box">최고 인기 제품</div>
+        <div id="won">43.000원</div>
+      </div>
+    </div>
+      <div id="cal">
+    	<a href="http://www.gameple.co.kr/news/articleView.html?idxno=141928" >
+        <span>
+        <h3>[5월 24일] 반다이남코, 다크소울: 리마스터 출시 등 게임 업계 핫 클립</h3>
+      <p>[게임플] # 신작 및 업데이트 소식 - 반다이남코 엔터테인먼트 코리아는 다크소울:
+        리마스터의 한국어판이 발매되었다고 밝혔다. 다크소울: 리마스터는 기존 작품을 현
+        세대 기기에서도 즐길 수 있도록 리마스터함과...</p>
+        <span>
+      </div>
+      </a>
+      <h2 id="sale">세일 정보</h2>
+      <div id="sal">
+        <div class="saleit">
+          <img src="images/half.png" class="sale">
+          <span class="bfprice">10500</span>
+          <span>80% →</span>
+          <span class="afprice">2100</span>
+        </div>
+        <div class="saleit">
+          <img src="images/portal.png" class="sale">
+          <span class="bfprice">20500</span>
+          <span>50% →</span>
+          <span class="afprice">10250</span>
+        </div>
+        <div class="saleit">
+          <img src="images/left4.png" class="sale">
+          <span class="bfprice">21000</span>
+          <span>50% →</span>
+          <span class="afprice">10500</span>
+        </div>
+        <div class="saleit">
+          <img src="images/aoss.png" class="sale">
+          <span class="bfprice">65000</span>
+          <span>30% →</span>
+          <span class="afprice">19500</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <sidebar>
+    <a href="#top"><i class="fa fa-caret-up" aria-hidden="true"></i></a>
+  </sidebar>
+  <footer>
+    동양미래대학교 컴퓨터소프트웨어공학과 인터넷기초실습 이현민,김영준,이주연
+  </footer>
+</body>
+</html>

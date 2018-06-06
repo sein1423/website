@@ -1,0 +1,70 @@
+* {
+  margin: 0px 0px 0px 0px;
+  z-index: 0;
+}
+body {
+background-color: gray;
+}
+hr {
+border-color: black;
+}
+header,footer {
+  background-color: black;
+}
+header > img {
+  margin: 20px 0px 0px 20px;
+  width: 200px;
+  height: 50px;
+  float: left;
+}
+header > div {
+  text-align: center;
+  display: inline-block;
+  background: linear-gradient(to bottom, gray, white, gray);
+  border-radius: 3px;
+}
+header > a > div {
+  text-align: center;
+  display: inline-block;
+  background: linear-gradient(to bottom, gray, white, gray);
+  border-radius: 3px;
+}
+#game, #console {
+  margin: 30px 0px 30px 30px;
+  width: 100px;
+  height: 30px;
+}
+#login, #signup {
+    position: relative;
+    float: right;
+    padding: 5px 10px 5px 10px;
+    margin: 10px 10px 10px 10px;
+}
+footer > p {
+  text-align: center;
+  color: white;
+  padding: 20px 0px 20px 0px;
+}
+nav {
+  width: 80%;
+  position: relative;
+  left: 10%;
+  background-color: white;
+}
+sidebar {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  left: 83%; top: 85%;
+ }
+ #cont {
+   position: relative;
+   left: 20px; top: 10px;
+   padding-bottom: 30px;
+   width: 94%;
+ }
+ footer {
+   padding: 50px 0px;
+   color: white;
+   text-align: center;
+ }
