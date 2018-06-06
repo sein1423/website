@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <style>
+     #login, #signup {
+       position: relative;
+       bottom:114px;
+     }
+     form > fieldset {
+       width: 90%;
+     }
+     p {
+       font-size: 120%;
+     }
+     pre {
+       width: 100%;
+       height: 70px;
+       overflow: scroll;
+     }
+  </style>
+</head>
+<body>
+  <header>
+      <hr id="top">
+      <a href="index.html"><img src="images/logo.png" id="logo"></a>
+      <a href="category.html"><div id="game">게임</div></a>
+      <div id="console">게임기</div>
+      <a href="login.html"><div id="login">로그인</div></a>
+      <a href="signup.html"><div id="signup">회원 가입</div></a>
+    </header>
+  <nav>
+    <div id="cont">
+      <form>
+        <fieldset>
+          <legend>회원 가입</legend>
+          <fieldset>
+            <legend>필수 입력</legend>
+            <p>아이디</p>
+            <input type="text" placeholder="아이디 입력">
+            <input type="button" value="중복 확인">
+            <p>닉네임</p>
+            <input type="text" placeholder="닉네임 입력">
+            <p>비밀번호</p>
+            <input type="password" placeholder="비밀번호 입력">
+            <p>비밀번호 확인</p>
+            <input type="password" placeholder="비밀번호 입력">
+            <p>생년월일</p>
+            <input type="date">
+            <p>이메일</p>
+            <input type="text" placeholder="이메일 입력">
+            </fieldset>
+          <fieldset>
+              <legend>선택 입력</legend>
+              <p>전화번호</p>
+              <select>
+                <option>선택</option>
+                <option>010</option>
+                <option>011</option>
+                <option>016</option>
+                <option>019</option>
+              </select>
+                -<input type="text" style="width: 40px">-<input type="text" style="width: 40px">
+                <input type="button" value="본인 인증">
+              <p>주소 입력</p>
+              <input type="text" placeholder="우편번호" style="width:100px;"><input type="button" value="주소 검색">
+              <input type="text" style="width: 100%" placeholder="주소 입력">
+              <input type="text" style="width: 100%" placeholder="상세 주소 입력">
+            </fieldset>
+            <pre>
+Google 서비스의 오용을 삼가시기 바랍니다. 예를 들어 서비스를 방해하거나
+Google이 제공하는 인터페이스 및 안내사항 이외의 다른 방법을 사용하여 액세스를
+시도하지 않아야 합니다. 귀하는 관련 수출 및 재수출 통제 법규 및 규정 등 오직
+법률상 허용되는 범위에서만 Google 서비스를 이용할 수 있습니다. 귀하가 Google
+약관이나 정책을 준수하지 않거나 Google이 부정행위 혐의를 조사하고 있는 경우,
+Google 서비스 제공이 일시 중지 또는 중단될 수 있습니다.
+            </pre>
+            <label>이하 이용 약관에 동의 합니다. <input type="checkbox"></label>
+            <input type="button" value="완료" onclick="location.href='index.html'" style="float: right">
+          </fieldset>
+      </form>
+    </div>
+  </nav>
+  <sidebar>
+    <a href="#top"><i class="fa fa-caret-up" aria-hidden="true"></i></a>
+  </sidebar>
+  <footer>
+    동양미래대학교 컴퓨터소프트웨어공학과 인터넷기초실습 이현민,김영준,이주연
+  </footer>
+</body>
+</html>
