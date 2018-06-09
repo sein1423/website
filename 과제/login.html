@@ -2,7 +2,6 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="index.css">
   <style>
      #login, #signup {
@@ -26,6 +25,7 @@
        margin-bottom:50px
      }
      form {
+       text-align: center;
        position: relative;
        top: 75px;
      }
@@ -54,13 +54,16 @@
          <div id="password2">비밀번호 입력</div>
     <input type="password" placeholder="비밀번호 입력" size="30">  <br>
     <a href="signup.html"><input type="button" value="회원가입"></a>
+    <!--회원가입 창으로 이동-->
     <a href="index.html"><input id="select" type="button" value="로그인"></a>
+    <!--원래 type submit 이여야 하는데 submit 이면 이동이 안되서 버튼으로 넣어둠-->
+    <!--메인 화면으로 이동, 원래는 서버에 있는 데이터를 확인해서 로그인 되어야 함-->
   </fieldset>
   </form><br>
     </div>
   </nav>
   <sidebar>
-    <a href="#top"><i class="fa fa-caret-up" aria-hidden="true"></i></a>
+    <a href="#top">↑</a>
   </sidebar>
   <footer>
     동양미래대학교 컴퓨터소프트웨어공학과 인터넷기초실습 이현민,김영준,이주연<

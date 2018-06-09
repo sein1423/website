@@ -2,7 +2,6 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="index.css">
   <style>
      #login, #signup {
@@ -79,12 +78,14 @@ Google 서비스 제공이 일시 중지 또는 중단될 수 있습니다.
             </pre>
             <label>이하 이용 약관에 동의 합니다. <input type="checkbox"></label>
             <input type="button" value="완료" onclick="location.href='index.html'" style="float: right">
+            <!--이것도 submit 으로 하면 작동이 안되더라-->
+            <!--누르면 서버로 데이터가 전송되어야함-->
           </fieldset>
       </form>
     </div>
   </nav>
   <sidebar>
-    <a href="#top"><i class="fa fa-caret-up" aria-hidden="true"></i></a>
+    <a href="#top">↑</a>
   </sidebar>
   <footer>
     동양미래대학교 컴퓨터소프트웨어공학과 인터넷기초실습 이현민,김영준,이주연

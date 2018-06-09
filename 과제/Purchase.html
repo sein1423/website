@@ -2,7 +2,6 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="index.css">
   <style>
     #login, #signup {
@@ -39,6 +38,7 @@
       <fieldset>
         <legend>결제 정보</legend>
         <div>결제 수단을 선택하세요.</div>
+        <!--마스터 카드 이외 항목들은 나중에 또 추가해야함-->
         <select name="sudan">
           <option value="mastercard">MasterCard</option>
           <option value="visa">Visa</option>
@@ -68,12 +68,13 @@
       <label><input type="checkbox"> 다음 결제를 위해 내 결제 정보 저장</label>
       <br>
       <input type="button" name="ok" value="구매" onclick="location.href='buyC.html'" id=ok>
+      <!--이것도 type submit 이여야 하는데 그럼 작동이 안해서 button으로 둠-->
     </fieldset>
   </form>
     </div>
   </nav>
   <sidebar>
-    <a href="#top"><i class="fa fa-caret-up" aria-hidden="true"></i></a>
+    <a href="#top">↑</a>
   </sidebar>
   <footer>
     동양미래대학교 컴퓨터소프트웨어공학과 인터넷기초실습 이현민,김영준,이주연<
